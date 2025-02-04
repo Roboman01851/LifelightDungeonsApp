@@ -1,0 +1,159 @@
+{
+  "spirits_list": {
+    "Dr. Alice Shianus": {
+      "name": "Dr Alice Shianus",
+      "description": "Leader of the Robotech Industries Research Lab.",
+      "story": "Robotech Industries"
+    },
+    "Nashi Vernabera": {
+      "name": "Nashi Vernabera",
+      "description": "Captain of 'The Purple Nebulas'.",
+      "story": "Eden's Epic"
+    },
+    "Dinrall Leonis": {
+      "name": "Dinrall Leonis",
+      "description": "Vice Captain of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Nazare Vilamlas": {
+      "name": "Nazare Vilamlas",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Vachinno Vilamlas": {
+      "name": "Vachinno Vilamlas",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Julia": {
+      "name": "Julia",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Altria Serenity": {
+      "name": "Altria Serenity",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "William Law": {
+      "name": "William Law",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Blake Auburn": {
+      "name": "Blake Auburn",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Slushie Warps": {
+      "name": "Slushie Warps",
+      "description": "Member of 'The Purple Nebula'.",
+      "story": "Eden's Epic"
+    },
+    "Dante Valentina": {
+      "name": "Dante Valentina",
+      "description": "Captain of 'The Scarlet Moons'.",
+      "story": "Eden's Epic"
+    },
+    "Leo Taktet": {
+      "name": "Leo Taktet",
+      "description": "Vice Captain of 'The Scarlet Moons'.",
+      "story": "Eden's Epic"
+    },
+    "Nella Scarlet": {
+      "name": "Nella Scarlet",
+      "description": "Member of 'The Scarlet Moons'.",
+      "story": "Eden's Epic"
+    },
+    "Emily Graves": {
+      "name": "Emily Graves",
+      "description": "Member of 'The Scarlet Moons'.",
+      "story": "Eden's Epic"
+    },
+    "Luxio Roth": {
+      "name": "Luxio Roth",
+      "description": "Member of 'The Scarlet Moons'.",
+      "story": "Eden's Epic"
+    },
+    "Julius Von Fischer": {
+      "name": "Julius Von Fischer",
+      "description": "Captain of 'The Golden Novas'.",
+      "story": "Eden's Epic"
+    },
+    "Leo Taktet": {
+      "name": "Leo Taktet",
+      "description": "Vice Captain of 'The Golden Novas'.",
+      "story": "Eden's Epic"
+    },
+    "Gaius Latinius": {
+      "name": "Gaius Latinius",
+      "description": "Captain of 'The Golden Novas'.",
+      "story": "Eden's Epic"
+    },
+    "Rebecca": {
+      "name": "Rebecca",
+      "description": "Captain of 'The Pink Cosmos'.",
+      "story": "Eden's Epic"
+    },
+    "Leo Taktet #2": {
+      "name": "Leo Taktet #2",
+      "description": "Vice Captain of 'The Pink Cosmos'.",
+      "story": "Eden's Epic"
+    },
+    "Tenzo Mozuchika": {
+      "name": "Tenzo Mozuchika",
+      "description": "Member of 'The Pink Cosmos'.",
+      "story": "Eden's Epic"
+    },
+    "Vimma Romena": {
+      "name": "Vimma Romena",
+      "description": "Member of 'The Pink Cosmos'.",
+      "story": "Eden's Epic"
+    },
+    "???": {
+      "name": "???",
+      "description": "Captain of 'The Black Meteors'.",
+      "story": "Eden's Epic"
+    },
+    "Black Oni": {
+      "name": "Black Oni",
+      "description": "Vice Captain of 'The Black Meteors'.",
+      "story": "Eden's Epic"
+    },
+    "Kazuha Darktree": {
+      "name": "Kazuha Darktree",
+      "description": "Member of 'The Black Meteors'.",
+      "story": "Eden's Epic"
+    },
+    "Axtleno Coatl": {
+      "name": "Axtleno Coatl",
+      "description": "Member of 'The Black Meteors'.",
+      "story": "Eden's Epic"
+    },
+    "Bellows Riddles": {
+      "name": "Bellows Riddles",
+      "description": "Member of 'The Black Meteors'.",
+      "story": "Eden's Epic"
+    },
+    "??? #2": {
+      "name": "??? #2",
+      "description": "Captain of 'The White Remnants'.",
+      "story": "Eden's Epic"
+    },
+    "Black Oni": {
+      "name": "Black Oni #2",
+      "description": "Vice Captain of 'The White Remnants'.",
+      "story": "Eden's Epic"
+    },
+    "Ludwig Lionheart": {
+      "name": "Ludwig Lionheart",
+      "description": "Member of 'The White Remnants'.",
+      "story": "Eden's Epic"
+    },
+    "Vincent Altrix": {
+      "name": "Vincent Altrix",
+      "description": "Captain of 'The Orange Neutrons'.",
+      "story": "Eden's Epic"
+    }
+  }
+}
