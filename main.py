@@ -1,4 +1,4 @@
-from json import *
+# from json import *
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
