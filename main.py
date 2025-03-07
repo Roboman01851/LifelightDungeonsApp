@@ -7,18 +7,45 @@ from kivy.uix.button import Button
 class AndroidKivyApp(App):
     def build(self):
         # Simple vertical layout
-        layout = BoxLayout(orientation='vertical', padding=20, spacing=10)
+        mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
-        # Add a label
-        self.label = Label(text="Press button for message.", font_size='24sp')
-        layout.add_widget(self.label)
 
-        # Add a button
-        button = Button(text="This is a test button", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
-        button.bind(on_press=self.on_button_press_test)
-        layout.add_widget(button)
+        # Party Button
+        button_party = Button(text="Party", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_party.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_party)
 
-        return layout
+        # Character Button
+        button_chara = Button(text="Characters", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_chara.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_chara)
+
+        # Archive Button
+        button_archive = Button(text="Archives", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_archive.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_archive)
+
+        # Academic Button
+        button_academ = Button(text="Academics", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_academ.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_academ)
+
+        # Gacha Button
+        button_gacha = Button(text="Gacha", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_gacha.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_gacha)
+
+        # Fusion Button
+        button_fusion = Button(text="Fusion", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_fusion.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_fusion)
+
+        # Calculator Button
+        button_calculator = Button(text="Calculator", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_calculator.bind(on_press=self.on_button_press_test)
+        mainmenu.add_widget(button_calculator)
+
+        return mainmenu
 
     def on_button_press_test(self, instance):
         self.label.text = "FUCK YOU LOL"
