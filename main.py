@@ -2,7 +2,9 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.uix.button import Button
+from kivy.uix.button import Button, ButtonBehavior
+from kivy.uix.image import Image
+from appassets import button_imgs
 
 class AndroidKivyApp(App):
     def build(self):
@@ -31,7 +33,7 @@ class AndroidKivyApp(App):
         mainmenu.add_widget(button_academ)
 
         # Gacha Button
-        button_gacha = Button(text="Gacha", size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
+        button_gacha = Button(background_normal='button_imgs/buttongacha.png', size_hint=(0.6, 0.2), pos_hint={'center_x': 0.5})
         button_gacha.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_gacha)
 
