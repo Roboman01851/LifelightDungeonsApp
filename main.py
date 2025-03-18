@@ -10,7 +10,7 @@ from kivy.resources import resource_find
 class AndroidKivyApp(App):
     def build(self):
         # Simple vertical layout
-        mainmenu = BoxLayout(orientation='horizontal', padding=200, spacing=10)
+        mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
 
         # Party Button
