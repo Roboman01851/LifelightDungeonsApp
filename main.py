@@ -14,37 +14,37 @@ class AndroidKivyApp(App):
 
 
         # Party Button
-        button_party = Button(background_normal='appassets/button_imgs/button_party.png', pos_hint={'center_x': 0.5})
+        button_party = Button(background_normal='appassets/button_imgs/button_party.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_party.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_party)
 
         # Character Button
-        button_chara = Button(background_normal='appassets/button_imgs/button_characters.png', pos_hint={'center_x': 0.5})
+        button_chara = Button(background_normal='appassets/button_imgs/button_characters.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_chara.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_chara)
 
         # Archive Button
-        button_archive = Button(background_normal='appassets/button_imgs/button_archives.png', pos_hint={'center_x': 0.5})
+        button_archive = Button(background_normal='appassets/button_imgs/button_archives.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_archive.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_archive)
 
         # Academic Button
-        button_academ = Button(background_normal='appassets/button_imgs/button_academics.png', pos_hint={'center_x': 0.5})
+        button_academ = Button(background_normal='appassets/button_imgs/button_academics.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_academ.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_academ)
 
         # Gacha Button
-        button_gacha = Button(background_normal='appassets/button_imgs/button_gacha.png', pos_hint={'center_x': 0.5})
+        button_gacha = Button(background_normal='appassets/button_imgs/button_gacha.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_gacha.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_gacha)
 
         # Fusion Button
-        button_fusion = Button(background_normal='appassets/button_imgs/button_fusion.png', pos_hint={'center_x': 0.5})
+        button_fusion = Button(background_normal='appassets/button_imgs/button_fusion.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_fusion.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_fusion)
 
         # Calculator Button
-        button_calculator = Button(background_normal='appassets/button_imgs/button_calc.png', pos_hint={'center_x': 0.5})
+        button_calculator = Button(background_normal='appassets/button_imgs/button_calc.png',size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
         button_calculator.bind(on_press=self.on_button_press_test)
         mainmenu.add_widget(button_calculator)
 
