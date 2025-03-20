@@ -8,6 +8,7 @@ from kivy.utils import platform
 from kivy.resources import resource_find
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
+from kivy.core.audio import SoundLoader
 
 class AndroidKivyApp(App):
     def build(self):
@@ -19,71 +20,81 @@ class AndroidKivyApp(App):
         button_grid_menu.bind(minimum_height=button_grid_menu.setter('height'))
 
         scrolling_buttons_menu.add_widget(button_grid_menu)
+        mainmenu.add_widget(scrolling_buttons_menu)
+
 
 
         # Party Button
         button_party = Button(background_normal='appassets/button_imgs/button_party.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_party.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_party)
+        scrolling_buttons_menu.add_widget(button_party)
 
         # Character Button
         button_chara = Button(background_normal='appassets/button_imgs/button_characters.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_chara.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_chara)
+        scrolling_buttons_menu.add_widget(button_chara)
 
         # Archive Button
         button_archive = Button(background_normal='appassets/button_imgs/button_archives.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_archive.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_archive)
+        scrolling_buttons_menu.add_widget(button_archive)
 
         # Academic Button
         button_academ = Button(background_normal='appassets/button_imgs/button_academics.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_academ.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_academ)
+        scrolling_buttons_menu.add_widget(button_academ)
 
         # Gacha Button
         button_gacha = Button(background_normal='appassets/button_imgs/button_gacha.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_gacha.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_gacha)
+        scrolling_buttons_menu.add_widget(button_gacha)
 
         # Fusion Button
         button_fusion = Button(background_normal='appassets/button_imgs/button_fusion.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_fusion.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_fusion)
+        scrolling_buttons_menu.add_widget(button_fusion)
 
         # Calculator Button
         button_calculator = Button(background_normal='appassets/button_imgs/button_calc.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
         button_calculator.bind(on_press=self.on_button_press_test)
-        mainmenu.add_widget(button_calculator)
+        scrolling_buttons_menu.add_widget(button_calculator)
+
+        self.button_noise = SoundLoader.load('appassets/pissingallbye.wav')
+
 
 
         return mainmenu
 
     def on_button_press_test(self, instance):
-        self.label.text = "FUCK YOU LOL"
+        if self.button_noise:
+            self.button_noise.stop()
+            self.button_noise.play()
+        else:
+            print("oopsies")
 
     ## MAIN MENU BUTTONS ##
 
     def on_button_press_party(self, instance):
-        return 0
+
+        print("peepee")
 
     def on_button_press_chara(self, instance):
-        return 0
+        print("peepee")
 
     def on_button_press_archive(self, instance):
-        return 0
+        print("peepee")
 
     def on_button_press_academ(self, instance):
-        return 0
+        print("peepee")
 
     def on_button_press_gacha(self, instance):
-        return 0
+        print("peepee")
 
     def on_button_press_fuse(self, instance):
-        return 0
+        print("peepee")
 
     def on_button_press_calc(self, instance):
-        return 0
+        print("peepee")
 
     ###########################################
 
