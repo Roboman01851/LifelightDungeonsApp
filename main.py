@@ -106,13 +106,10 @@ class AndroidKivyApp(App):
     def on_button_press_lore(self, instance):
         return 0
 
-    def on_button_press_skll(self, instance):
+    def on_button_press_skill(self, instance):
         return 0
 
     def on_button_press_beast(self, instance):
-        return 0
-
-    def on_button_press_chara(self, instance):
         return 0
 
     #############################################
