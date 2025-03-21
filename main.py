@@ -9,9 +9,11 @@ from kivy.resources import resource_find
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.core.audio import SoundLoader
+import kivy
 
 class AndroidKivyApp(App):
     def build(self):
+
         # Create Main Menu Layout
         mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
@@ -22,7 +24,9 @@ class AndroidKivyApp(App):
         scrolling_buttons_menu.add_widget(button_grid_menu)
         mainmenu.add_widget(scrolling_buttons_menu)
 
+        self.debug_label = Label(text="Debug output here", size_hint=(1, 0.1))
 
+        scrolling_buttons_menu.add_widget(self.debug_label)
 
         # Party Button
         button_party = Button(background_normal='appassets/button_imgs/button_party.png',size_hint=(0.6, 0.4), pos_hint={'center_x': 0.5})
@@ -59,18 +63,12 @@ class AndroidKivyApp(App):
         button_calculator.bind(on_press=self.on_button_press_test)
         scrolling_buttons_menu.add_widget(button_calculator)
 
-        self.button_noise = SoundLoader.load('appassets/pissingallbye.wav')
-
 
 
         return mainmenu
 
     def on_button_press_test(self, instance):
-        if self.button_noise:
-            self.button_noise.stop()
-            self.button_noise.play()
-        else:
-            print("oopsies")
+        print("pees")
 
     ## MAIN MENU BUTTONS ##
 
