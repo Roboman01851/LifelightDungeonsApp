@@ -17,7 +17,7 @@ class AndroidKivyApp(App):
         # Create Main Menu Layout
         mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
-        scrolling_buttons_menu = ScrollView(size_hint=(None,None))
+        scrolling_buttons_menu = ScrollView(size_hint=(0.5,1))
         button_grid_menu = GridLayout(cols=1, spacing=20, size_hint_y=None)
         button_grid_menu.bind(minimum_height=button_grid_menu.setter('height'))
 
@@ -25,7 +25,7 @@ class AndroidKivyApp(App):
         mainmenu.add_widget(scrolling_buttons_menu)
 
         # Party Button
-        button_party = Button(background_normal='appassets/button_imgs/button_party.png',size_hint=(1, 1), pos_hint={'center_x': 0.5}) # Full Scale
+        button_party = Button(background_normal='appassets/button_imgs/button_party.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5}) # Full Scale
         button_party.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_party)
 
@@ -35,27 +35,27 @@ class AndroidKivyApp(App):
         button_grid_menu.add_widget(button_chara)
 
         # Archive Button
-        button_archive = Button(background_normal='appassets/button_imgs/button_archives.png',size_hint=(None, None), pos_hint={'center_x': 0.5}) # No Set with or height
+        button_archive = Button(background_normal='appassets/button_imgs/button_archives.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5}) # No Set with or height
         button_archive.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_archive)
 
         # Academic Button
-        button_academ = Button(background_normal='appassets/button_imgs/button_academics.png',size_hint=(None, None), height=Window.width * 0.5 * (328 / 1017), width=Window.height * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5}) # 50% hieght and with with respect to image resolution
+        button_academ = Button(background_normal='appassets/button_imgs/button_academics.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), width=Window.height * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5}) # 50% hieght and with with respect to image resolution
         button_academ.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_academ)
 
         # Gacha Button
-        button_gacha = Button(background_normal='appassets/button_imgs/button_gacha.png',size_hint=(1, None), pos_hint={'center_x': 0.5})
+        button_gacha = Button(background_normal='appassets/button_imgs/button_gacha.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5})
         button_gacha.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_gacha)
 
         # Fusion Button
-        button_fusion = Button(background_normal='appassets/button_imgs/button_fusion.png',size_hint=(1, None), pos_hint={'center_x': 0.5})
+        button_fusion = Button(background_normal='appassets/button_imgs/button_fusion.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5})
         button_fusion.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_fusion)
 
         # Calculator Button
-        button_calculator = Button(background_normal='appassets/button_imgs/button_calc.png',size_hint=(1, None), pos_hint={'center_x': 0.5})
+        button_calculator = Button(background_normal='appassets/button_imgs/button_calc.png',size_hint=(0.5, None),height=Window.width * 0.5 * (328 / 1017), pos_hint={'center_x': 0.5})
         button_calculator.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_calculator)
 
