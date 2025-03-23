@@ -17,7 +17,7 @@ class AndroidKivyApp(App):
         # Create Main Menu Layout
         mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
-        scrolling_buttons_menu = ScrollView(size_hint=(1,1))
+        scrolling_buttons_menu = ScrollView(size_hint=(None,None))
         button_grid_menu = GridLayout(cols=1, spacing=20, size_hint_y=None)
         button_grid_menu.bind(minimum_height=button_grid_menu.setter('height'))
 
