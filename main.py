@@ -78,10 +78,11 @@ class MainMenu(Screen):
         button_calculator.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_calculator)
 
-        def on_button_press_test(self, instance):
-
+    def on_button_press_test(self, instance):
+         if self.noise:
+            self.noise.stop()
+            self.noise.play()
             print("pees")
-
         ## MAIN MENU BUTTONS ##
 
     def on_button_press_party(self, instance):
