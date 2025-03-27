@@ -18,6 +18,11 @@ class MainMenu(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        with self.canvas.before:
+            self.MM_Background = Rectangle(source='appassets/background_imgs/main_menu_background', pos=self.pos, size=self.size)
+
+        self.bind(pos=self.update_background, size=self.update_background)
+
         # Create Main Menu Layout
         mainmenu = BoxLayout(orientation='vertical', padding=20, spacing=10)
 
@@ -81,6 +86,9 @@ class MainMenu(Screen):
                                    pos_hint={'center_x': 0.5})
         button_calculator.bind(on_press=self.on_button_press_test)
         button_grid_menu.add_widget(button_calculator)
+
+    def update_background(self, *args):
+        self.MM_Background.size = self.size
 
     def on_button_press_test(self, instance):
          if self.noise:
