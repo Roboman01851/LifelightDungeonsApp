@@ -83,7 +83,7 @@ class MainMenu(Screen):
             self.noise.stop()
             self.noise.play()
             print("pees")
-        ## MAIN MENU BUTTONS ##
+    ## MAIN MENU BUTTONS ##
 
     def on_button_press_party(self, instance):
         print("peepee")
