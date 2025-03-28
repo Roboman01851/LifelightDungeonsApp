@@ -94,7 +94,6 @@ class MainMenu(Screen):
          if self.noise:
             self.noise.stop()
             self.noise.play()
-            print("pees")
     ## MAIN MENU BUTTONS ##
 
     def on_button_press_party(self, instance):
