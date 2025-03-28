@@ -19,7 +19,7 @@ class MainMenu(Screen):
         super().__init__(**kwargs)
 
         with self.canvas.before:
-            self.MM_Background = Rectangle(source='appassets/background_imgs/main_menu_background', pos=self.pos, size=self.size)
+            self.MM_Background = Rectangle(source='appassets/background_imgs/main_menu_background.png', pos=self.pos, size=self.size)
 
         self.bind(pos=self.update_background, size=self.update_background)
 
@@ -117,6 +117,35 @@ class MainMenu(Screen):
 
     def on_button_press_calc(self, instance):
         print("peepee")
+
+class PartyMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class CharacterMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class ArchiveMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class AcedemicMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class GachaMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class FusionMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+class CalculatorMenu(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
 
 class AndroidKivyApp(App):
     def build(self):
